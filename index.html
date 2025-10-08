@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Love ❤️</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+h1 {
+font-size: 2.8rem;
+margin-bottom: 30px;
+text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+}
+
+input {
+padding: 12px 16px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+width: 250px;
+text-align: center;
+outline: none;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+button {
+margin-top: 20px;
+padding: 12px 24px;
+border: none;
+border-radius: 8px;
+background: #fff;
+color: #ff4f8b;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+transform: scale(1.05);
+background: #ffebf1;
+}
+
+.result {
+margin-top: 30px;
+font-size: 1.8rem;
+font-weight: 600;
+text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+min-height: 40px;
+}
+
+footer {
+position: absolute;
+bottom: 20px;
+font-size: 14px;
+opacity: 0.8;
+} </style>
+
+</head>
+<body>
+  <h1>💘 Find Your Love 💘</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name...">
+  <button onclick="findLove()">Find Love</button>
+  <div class="result" id="result"></div>
+
+  <footer>Made by Jay Soni ✨</footer>
+
+<script>
+function findLove() {
+  const name = document.getElementById('nameInput').value.trim().toLowerCase();
+  const result = document.getElementById('result');
+
+  if (name === "sanskar") {
+    result.textContent = "Sanskar ❤️ Suhana";
+  } else if (name === "suhana") {
+    result.textContent = "Suhana ❤️ Sanskar";
+  } else if (name === "jay") {
+    result.textContent = "Jay ❤️ Roshni";
+  } else if (name === "roshni") {
+    result.textContent = "Roshni ❤️ Jay";
+  } else if (name === "") {
+    result.textContent = "Please enter your name 😅";
+  } else {
+    result.textContent = "you are single for all time 😅";
+  }
+}
+</script>
+
+</body>
+</html>
